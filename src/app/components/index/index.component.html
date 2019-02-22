@@ -1,0 +1,24 @@
+<br>
+<div *ngIf="users">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="users.length == 0">
+          <td colspan="4" style="text-align: center">No Users</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td><button (click)="selectUser(user.id)" class="btn btn-primary">Select</button></td>
+          <td><button (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

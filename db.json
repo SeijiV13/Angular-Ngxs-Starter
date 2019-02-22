@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "seiji",
+      "email": "villafrancasra@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "angela",
+      "email": "angelamiranda1211@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "ralph",
+      "email": "ralph@g.com"
+    }
+  ]
+}
